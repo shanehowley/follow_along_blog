@@ -26,7 +26,7 @@ SECRET_KEY = 'd9=48aojskxs1su&c@*p#4swq&kywybgwdrke_(ca9c&9ps6it'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+INTERNAL_IPS = ['127.0.0.1']
 
 # Application definition
 
@@ -43,9 +43,11 @@ INSTALLED_APPS = [
     'disqus',
     'django_gravatar',
     'django_forms_bootstrap',
+    'debug_toolbar'
 ]
 
 MIDDLEWARE = [
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
