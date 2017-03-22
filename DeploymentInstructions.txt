@@ -99,6 +99,7 @@ We'll use Postgres for this example.
 		Get these from the DATABASE_URL
 
 		postgres://user:password@host/database
+		postgres://mdxtgotewcteol:bec8e09dd7f3ddcaa777cb061d1c9760aac819e03570ccb2a773c0a46ede6018@ec2-176-34-113-15.eu-west-1.compute.amazonaws.com:5432/d6e7vgbujbk6ut
 
 	3.c Add the following to the end of the URL 
 		(only in DataGrip)
