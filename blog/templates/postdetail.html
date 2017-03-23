@@ -18,7 +18,9 @@
                     {% endif %}
                     <p>{{ post.content }}</p>
                     <button class="btn btn-default" onclick="location.href='{% url 'post_list' %}'">Back To Blog</button>
+                    {% if user.is_authenticated %}
                     <button class="btn btn-default" onclick="location.href='{% url 'edit_post' post.id %}'">Edit</button>
+                    {% endif %}
                     <p>{{ post.published_date }} | <strong>Views</strong> {{ post.views }} |
                         <strong>Tag</strong> {{ post.tag }}</p>
                 </div>
@@ -29,3 +31,5 @@
         </div>
     </div>
 {% endblock %}
+
+
